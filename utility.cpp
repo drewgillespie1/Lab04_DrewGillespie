@@ -46,7 +46,7 @@ bool isPrime(int x) {
   if(x==0)
     flag=false;
   if(x==1)
-    flag=true;
+    flag=false;
   return flag;
   
      
