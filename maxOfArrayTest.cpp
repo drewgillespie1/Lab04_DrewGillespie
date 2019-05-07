@@ -18,11 +18,11 @@ int main() {
 	       maxOfArray(fiveInts,5), 
 	       "maxOfArray(fiveInts,5)" ); 
 
-  assertEquals(3,
+  assertEquals(12,
 	       maxOfArray(fiveInts,2), 
 	       "maxOfArray(fiveInts,2)" ); 
 
-  assertEquals(3,
+  assertEquals(12,
 	       maxOfArray(fiveInts,3), 
 	       "maxOfArray(fiveInts,3)" ); 
 
