@@ -14,7 +14,7 @@ int main() {
 
   
   int fiveInts[5]={12,3,4,-9,5}; 
-  assertEquals(-9,
+  assertEquals(12,
 	       maxOfArray(fiveInts,5), 
 	       "maxOfArray(fiveInts,5)" ); 
 
@@ -32,7 +32,7 @@ int main() {
 	       "maxOfArray(meaning,1)" ); 
 
   int mix[10]={-42,12,-9,56,123,-32767,48}; // last three will be zero
-  assertEquals(-32767,
+  assertEquals(123,
 	       maxOfArray(mix,10), 
 	       "maxOfArray(mix,10)" );
 
