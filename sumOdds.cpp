@@ -7,7 +7,9 @@
 int sumOdds(int a[], int size) {
   sum=0
   for (int i=0;i<size;i++){
-    sum+=a[i];
+    if(a[i]%2==1||a[i}%2==-1){
+      sum+=a[i];
+    }
   }
   return sum;
 }
