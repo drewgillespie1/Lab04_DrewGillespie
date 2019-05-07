@@ -2,10 +2,11 @@
 #include "tddFuncs.h"
 
 int main() {
-  // Fill this in with exactly seven tests of maxOfArray
-  // that all pass, and that test various cases,
-  // i.e. where the max is at the beginning, middle and end of the array
-  // See lab instructions for details.
-
+  int empty[] = {};
+  // expect this function to result in message to cerr and exit(1);
+  assertEquals(0,
+	       maxOfArray(empty,0), 
+	       "maxOfArray(empty,0)" ); 
+  return 0;
   return 0;
 }
