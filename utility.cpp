@@ -25,13 +25,28 @@ bool isEven(int x) {
 }
 bool isPrime(int x) { 
   bool flag=true;
-  for (int i=2; i<=x/2; i++){
-    if (x%i==0){
-      flag=false;
-      break;
+  if(x>=2){
+    for (int i=2; i<=x/2; i++){
+      if (x%i==0){
+        flag=false;
+        break;
+      }
     }
      
   }
+  if(x<=-2){    
+    for (int i=-2; i<=-x/2; i--){
+      if (x%i==0){
+        flag=false;
+        break;
+      }
+    }
+  }
+    
+  if(x==0)
+    flag=false;
+  if(x==1)
+    flag=true;
   return flag;
   
      
