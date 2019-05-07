@@ -12,24 +12,24 @@
 
 bool isOdd(int x) { 
   if(x%2==1)
-    return 1;
+    return true;
   else
-    return 0;
+    return false;
   
 }
 bool isEven(int x) { 
   if (x%2==0)
-    return 1;
+    return true;
   else
-    return 0;
+    return false;
 }
 bool isPrime(int x) { 
   for (i=2; i<(x-1); i++){
     if (x%i==0){
-      return 1;
+      return true;
       break;
     }
-    else{return 0;}  
+    else{return false;}  
   }
   
      
