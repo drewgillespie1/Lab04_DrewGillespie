@@ -9,9 +9,9 @@ int countPrimes(int a[], int size) {
   
   for(int j=0, j<size,j++){
     
-    if(a[i]>=2){
+    if(a[j]>=2){
       for (int i=2; i<=x/2; i++){
-        if (a[i]%i==0){
+        if (a[j]%i==0){
           countprime+=0
           break;
         
@@ -20,9 +20,9 @@ int countPrimes(int a[], int size) {
     }
      
   }
-  if(a[i]<=-2){    
+  if(a[j]<=-2){    
     for (int i=-2; i<=-x/2; i--){
-      if (a[i]%i==0){
+      if (a[j]%i==0){
         countprime+=0;
         break;
       }
@@ -30,9 +30,9 @@ int countPrimes(int a[], int size) {
     }
   }
     
-  if(a[i]==0)
+  if(a[j]==0)
     countprime+=0;
-  if(a[i]==1||a[i]==-1)
+  if(a[j]==1||a[j]==-1)
     countprime+=0;
   
     
