@@ -24,7 +24,7 @@ bool isEven(int x) {
     return false;
 }
 bool isPrime(int x) { 
-  bool flag=true
+  bool flag=true;
   for (int i=2; i<=x/2; i++){
     if (x%i==0){
       flag=false;
