@@ -11,7 +11,7 @@
 // these functions
 
 bool isOdd(int x) { 
-  if(x%2==1)
+  if(x%2==1||x%2==-1)
     return true;
   else
     return false;
@@ -24,13 +24,15 @@ bool isEven(int x) {
     return false;
 }
 bool isPrime(int x) { 
-  for (int i=2; i<(x-1); i++){
+  bool flag=true
+  for (int i=2; i<=x/2; i++){
     if (x%i==0){
-      return true;
+      flag=false;
       break;
     }
-    else{return false;}  
+     
   }
+  return flag;
   
      
   //return false;  // REPLACE THIS STUB WITH REAL CODE
