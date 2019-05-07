@@ -7,7 +7,7 @@
 int countPrimes(int a[], int size) {
   int countprime=0;
   
-  for(int j=0, j<size,j++){
+  for(int j=0; j<size;j++){
     
     if(a[j]>=2){
       for (int i=2; i<=a[j]/2; i++){
